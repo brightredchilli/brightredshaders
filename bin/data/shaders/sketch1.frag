@@ -2,6 +2,10 @@
 
 #version 150
 
+uniform vec2 u_bounds;
+uniform vec2 u_mouse;
+uniform float u_time;
+
 out vec4 outputColor;
 
 void main()
@@ -14,9 +18,10 @@ void main()
     float windowWidth = 1024.0;
     float windowHeight = 768.0;
 
-    float r = gl_FragCoord.x / windowWidth;
-    float g = gl_FragCoord.y / windowHeight;
-    float b = 1.0;
+    float thing = abs(sin(u_time));
+    float r = thing + gl_FragCoord.x / u_bounds[0];
+    float g = thing + gl_FragCoord.y / u_bounds[1];
+    float b = u_mouse[0] / u_bounds[0];
     float a = 1.0;
     outputColor = vec4(r, g, b, a);
 }
