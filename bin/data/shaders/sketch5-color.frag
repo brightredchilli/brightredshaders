@@ -46,17 +46,14 @@ vec3 colorB = vec3(1.000,0.833,0.224);
 void main() {
     vec3 color = vec3(0.0);
 
-    float pct = abs(cubicPulse(0.5, 0.5, cos(u_time)));
-
-
-
+    float pct = impulse(2.0, cos(u_time) + 0.5);
 
     // Mix uses pct (a value from 0-1) to
     // mix the two colors
     color = mix(colorA, colorB, pct);
 
     vec3 debug = vec3(norm_point.x);
-    color = mix(color, vec3(1.0, 0.0, 0.0), plot(norm_point, debug.r));
+    color = mix(color, vec3(1.0, 0.0, 0.0), plot(norm_point, cos(u_time) + 0.5 ));
 
     outputColor = vec4(color,1.0);
 }

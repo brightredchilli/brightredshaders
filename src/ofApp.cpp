@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    shader.load("shaders/sketch1.vert", "shaders/sketch5-color.frag");
+    shader.load("shaders/sketch1.vert", "shaders/sketch6a-shaping.frag");
 }
 
 //--------------------------------------------------------------
