@@ -62,6 +62,7 @@
 		2C13ACCE6D5DFB1F9F03B697 /* idea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = idea.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/idea.h; sourceTree = SOURCE_ROOT; };
 		2DFC55AEAA9C19747932384B /* md5.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = md5.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/md5.h; sourceTree = SOURCE_ROOT; };
 		2E01431449ED632CC88103F8 /* des_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des_old.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
+		2E1025621E4C11AA0056305B /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
 		2E77B1441E306519005D81A1 /* ofxVideoRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxVideoRecorder.cpp; sourceTree = "<group>"; };
 		2E77B1451E306519005D81A1 /* ofxVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVideoRecorder.h; sourceTree = "<group>"; };
 		2E77B15A1E306AC3005D81A1 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
@@ -73,6 +74,14 @@
 		2E77B1601E36ED16005D81A1 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
 		2E77B1611E36F303005D81A1 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
 		2E77B1621E36F5D0005D81A1 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
+		2EA370A11E43D4B500A0E811 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
+		2EA370A21E44F32A00A0E811 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
+		2EA370A31E44F86A00A0E811 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
+		2EA370A41E44FBE800A0E811 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
+		2EA370A51E45104B00A0E811 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
+		2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
+		2EC565701E4D702600AD8A62 /* sketch13b-compositions.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-compositions.frag"; sourceTree = "<group>"; };
+		2ECC4F8D1E3C10B9003BAA8C /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
 		38EA84449F01F08BFC105315 /* conf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = conf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/conf.h; sourceTree = SOURCE_ROOT; };
 		397E8A624D4AB2F53FB3B145 /* comp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = comp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/comp.h; sourceTree = SOURCE_ROOT; };
 		45714EFDE3523AD314A0CF02 /* dso.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dso.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dso.h; sourceTree = SOURCE_ROOT; };
@@ -206,6 +215,15 @@
 				2E77B1601E36ED16005D81A1 /* sketch6-functionplotting.frag */,
 				2E77B1621E36F5D0005D81A1 /* sketch6a-shaping.frag */,
 				2E77B1611E36F303005D81A1 /* sketch7-sunset.frag */,
+				2ECC4F8D1E3C10B9003BAA8C /* sketch8-color.frag */,
+				2EA370A11E43D4B500A0E811 /* sketch9-color.frag */,
+				2EA370A21E44F32A00A0E811 /* sketch10-shapes.frag */,
+				2EA370A31E44F86A00A0E811 /* sketch11-shapes.frag */,
+				2EA370A41E44FBE800A0E811 /* sketch12-rect.frag */,
+				2E1025621E4C11AA0056305B /* sketch12a-lines.frag */,
+				2EA370A51E45104B00A0E811 /* sketch13-circles.frag */,
+				2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */,
+				2EC565701E4D702600AD8A62 /* sketch13b-compositions.frag */,
 			);
 			name = shaders;
 			path = bin/data/shaders;
