@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    shader.load("shaders/sketch1.vert", "shaders/sketch13b-compositions.frag");
+    shader.load("shaders/sketch1.vert", "shaders/newsketch.frag");
 }
 
 //--------------------------------------------------------------

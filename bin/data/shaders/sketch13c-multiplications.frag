@@ -21,16 +21,23 @@ float softCircle(in vec2 st, in vec2 origin, float radius, float feather) {
     vec2 adjusted_st = origin + direction; // reconstruct new point based on this
 
     float dist = distance(adjusted_st, origin);
-    return smoothstep(radius - feather, radius + feather, dist);
+    return smoothstep(radius + feather, radius - feather, dist);
 }
 
 void main() {
 
-    vec3 color = vec3(.9, .93, .81); // background
+    vec3 color = vec3(1., 1., 1.); // background
 
-    float wave = sin(u_time);
+    st.x *= 10;
+    st.x = fract(st.x);
 
-    color = mix(vec3(9., .1, .2), color, softCircle(st, vec2(.5, .5), .2, 0.03 + wave * 0.02));
+    float radius = .07;
+    float dist = .01;
 
-    outputColor = vec4(color,1.0);
+    // multiplication gives a logical AND
+    float pct = softCircle(st, vec2(.5 - dist, .5), radius, .01) * softCircle(st, vec2(.5 + dist, .5), radius, .01);
+
+    color = mix(color, vec3(1., 0., 0.), pct);
+
+    outputColor = vec4(color, 1.);
 }

@@ -74,13 +74,17 @@
 		2E77B1601E36ED16005D81A1 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
 		2E77B1611E36F303005D81A1 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
 		2E77B1621E36F5D0005D81A1 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
+		2E8A4F9E1E5BDA8A00855A66 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
+		2E8A4F9F1E5BDD2C00855A66 /* sketch13c-multiplications.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13c-multiplications.frag"; sourceTree = "<group>"; };
+		2E8A4FA01E5BE1B500855A66 /* sketch13d-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13d-wtf.frag"; sourceTree = "<group>"; };
+		2E8A4FA11E5BE56700855A66 /* sketch13e-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13e-wtf.frag"; sourceTree = "<group>"; };
 		2EA370A11E43D4B500A0E811 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
 		2EA370A21E44F32A00A0E811 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
 		2EA370A31E44F86A00A0E811 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
 		2EA370A41E44FBE800A0E811 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
 		2EA370A51E45104B00A0E811 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
 		2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
-		2EC565701E4D702600AD8A62 /* sketch13b-compositions.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-compositions.frag"; sourceTree = "<group>"; };
+		2EC565701E4D702600AD8A62 /* sketch13b-additionspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-additionspatterns.frag"; sourceTree = "<group>"; };
 		2ECC4F8D1E3C10B9003BAA8C /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
 		38EA84449F01F08BFC105315 /* conf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = conf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/conf.h; sourceTree = SOURCE_ROOT; };
 		397E8A624D4AB2F53FB3B145 /* comp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = comp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/comp.h; sourceTree = SOURCE_ROOT; };
@@ -223,7 +227,11 @@
 				2E1025621E4C11AA0056305B /* sketch12a-lines.frag */,
 				2EA370A51E45104B00A0E811 /* sketch13-circles.frag */,
 				2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */,
-				2EC565701E4D702600AD8A62 /* sketch13b-compositions.frag */,
+				2EC565701E4D702600AD8A62 /* sketch13b-additionspatterns.frag */,
+				2E8A4F9F1E5BDD2C00855A66 /* sketch13c-multiplications.frag */,
+				2E8A4FA01E5BE1B500855A66 /* sketch13d-wtf.frag */,
+				2E8A4FA11E5BE56700855A66 /* sketch13e-wtf.frag */,
+				2E8A4F9E1E5BDA8A00855A66 /* newsketch.frag */,
 			);
 			name = shaders;
 			path = bin/data/shaders;
