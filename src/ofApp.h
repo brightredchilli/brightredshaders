@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,5 +24,7 @@ class ofApp : public ofBaseApp{
 
     ofShader shader;
     bool needsCapture;
+    ofxFloatSlider uniformA;
+    ofxPanel gui;
 		
 };

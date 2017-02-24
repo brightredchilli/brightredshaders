@@ -3,6 +3,10 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     shader.load("shaders/sketch1.vert", "shaders/newsketch.frag");
+
+    gui.setup();
+    gui.add(uniformA.setup("uniformA", 0, 0, 10.0));
+
 }
 
 //--------------------------------------------------------------
@@ -15,6 +19,7 @@ void ofApp::draw(){
     ofSetColor(255);
 
     shader.begin();
+    shader.setUniform1f("u_variableA", uniformA);
     shader.setUniform1f("u_time", ofGetElapsedTimef());
     shader.setUniform2f("u_bounds", ofGetWidth(), ofGetHeight());
     glm::vec2 mouse = glm::vec2(ofGetMouseX(), ofGetMouseY());
@@ -29,6 +34,8 @@ void ofApp::draw(){
         img.grabScreen(0, 0 , ofGetWidth(), ofGetHeight());
         img.save("screenshot.png");
     }
+
+    gui.draw();
 }
 
 //--------------------------------------------------------------

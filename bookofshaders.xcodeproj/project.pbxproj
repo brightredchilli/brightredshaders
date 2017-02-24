@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		113DD1078FBD17F5761A9855 /* VideoGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5C285698BA66A91C7A302 /* VideoGrabber.cpp */; };
-		2E77B1461E306519005D81A1 /* ofxVideoRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E77B1441E306519005D81A1 /* ofxVideoRecorder.cpp */; };
+		1D54A3D1C2CCEACF3844B3EC /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F76FF5EC351A3A115DF8E /* ofxBaseGui.cpp */; };
+		56E0EC06162476CFD4D889EF /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE3833FF682FF67B5A69 /* ofxPanel.cpp */; };
+		59091B69D0C22F1C78C7FBD7 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49524AA22E67F7EBB94B1959 /* ofxSliderGroup.cpp */; };
+		6EB34FC42E763C8515577046 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80858D15F19AE61BA2F1276A /* ofxToggle.cpp */; };
+		78DCCE01CA1ECC0F810A1857 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78BBF4632DA521E4405A4573 /* ofxGuiGroup.cpp */; };
+		96A16EECA3D979DC858C14E2 /* ofxVideoRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D68E6F17DC45C132ADB62305 /* ofxVideoRecorder.cpp */; };
 		A2879E6F7C6EF163C3201D6E /* ofxXmlPoco.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58F91E300DCF0D2266BC29E5 /* ofxXmlPoco.cpp */; };
+		B6BF15D1BE7D008A045F1C22 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F5818D0E2AFD2595B2872 /* ofxLabel.cpp */; };
+		D14112331A0BCEF6A1B28D26 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9CB99A8F4FFD8917412B611 /* ofxButton.cpp */; };
+		DA517FABDA67F42EBD35AA8D /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 839D44350DD63C335DC5A865 /* ofxSlider.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -53,6 +61,7 @@
 		1004CD9AFC374C8C455F5955 /* err.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = err.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/err.h; sourceTree = SOURCE_ROOT; };
 		1148FB663D0CDB923878CC9E /* safestack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = safestack.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/safestack.h; sourceTree = SOURCE_ROOT; };
 		125932C6275E165142CD6DB4 /* srp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = srp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/srp.h; sourceTree = SOURCE_ROOT; };
+		1383DE3833FF682FF67B5A69 /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		162471D2662578CE77D68AC5 /* ecdh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ecdh.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ecdh.h; sourceTree = SOURCE_ROOT; };
 		19D4B4E20C7658B3CEFAAF12 /* ssl23.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ssl23.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ssl23.h; sourceTree = SOURCE_ROOT; };
 		2A35772AB2919B9C7B925203 /* ecdsa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ecdsa.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ecdsa.h; sourceTree = SOURCE_ROOT; };
@@ -62,31 +71,30 @@
 		2C13ACCE6D5DFB1F9F03B697 /* idea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = idea.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/idea.h; sourceTree = SOURCE_ROOT; };
 		2DFC55AEAA9C19747932384B /* md5.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = md5.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/md5.h; sourceTree = SOURCE_ROOT; };
 		2E01431449ED632CC88103F8 /* des_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des_old.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
-		2E1025621E4C11AA0056305B /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
-		2E671C921E5E7E4A008701B2 /* sketch14-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14-distancefields.frag"; sourceTree = "<group>"; };
-		2E77B1441E306519005D81A1 /* ofxVideoRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxVideoRecorder.cpp; sourceTree = "<group>"; };
-		2E77B1451E306519005D81A1 /* ofxVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVideoRecorder.h; sourceTree = "<group>"; };
-		2E77B15A1E306AC3005D81A1 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
-		2E77B15B1E306AC3005D81A1 /* sketch1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.vert; sourceTree = "<group>"; };
-		2E77B15C1E306AC3005D81A1 /* sketch2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch2.frag; sourceTree = "<group>"; };
-		2E77B15D1E306AC3005D81A1 /* sketch3-exclusion.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch3-exclusion.frag"; sourceTree = "<group>"; };
-		2E77B15E1E306AC3005D81A1 /* sketch4-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch4-shaping.frag"; sourceTree = "<group>"; };
-		2E77B15F1E306AC3005D81A1 /* sketch5-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch5-color.frag"; sourceTree = "<group>"; };
-		2E77B1601E36ED16005D81A1 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
-		2E77B1611E36F303005D81A1 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
-		2E77B1621E36F5D0005D81A1 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
-		2E8A4F9E1E5BDA8A00855A66 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
-		2E8A4F9F1E5BDD2C00855A66 /* sketch13c-multiplications.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13c-multiplications.frag"; sourceTree = "<group>"; };
-		2E8A4FA01E5BE1B500855A66 /* sketch13d-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13d-wtf.frag"; sourceTree = "<group>"; };
-		2E8A4FA11E5BE56700855A66 /* sketch13e-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13e-wtf.frag"; sourceTree = "<group>"; };
-		2EA370A11E43D4B500A0E811 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
-		2EA370A21E44F32A00A0E811 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
-		2EA370A31E44F86A00A0E811 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
-		2EA370A41E44FBE800A0E811 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
-		2EA370A51E45104B00A0E811 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
-		2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
-		2EC565701E4D702600AD8A62 /* sketch13b-additionspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-additionspatterns.frag"; sourceTree = "<group>"; };
-		2ECC4F8D1E3C10B9003BAA8C /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
+		2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
+		2E9F17AD1E5FD4AB0050C588 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
+		2E9F17AE1E5FD4AB0050C588 /* sketch1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.vert; sourceTree = "<group>"; };
+		2E9F17AF1E5FD4AB0050C588 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
+		2E9F17B01E5FD4AB0050C588 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
+		2E9F17B11E5FD4AB0050C588 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
+		2E9F17B21E5FD4AB0050C588 /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
+		2E9F17B31E5FD4AB0050C588 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
+		2E9F17B41E5FD4AB0050C588 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
+		2E9F17B51E5FD4AB0050C588 /* sketch13b-additionspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-additionspatterns.frag"; sourceTree = "<group>"; };
+		2E9F17B61E5FD4AB0050C588 /* sketch13c-multiplications.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13c-multiplications.frag"; sourceTree = "<group>"; };
+		2E9F17B71E5FD4AB0050C588 /* sketch13d-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13d-wtf.frag"; sourceTree = "<group>"; };
+		2E9F17B81E5FD4AB0050C588 /* sketch13e-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13e-wtf.frag"; sourceTree = "<group>"; };
+		2E9F17B91E5FD4AB0050C588 /* sketch14-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14-distancefields.frag"; sourceTree = "<group>"; };
+		2E9F17BA1E5FD4AB0050C588 /* sketch2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch2.frag; sourceTree = "<group>"; };
+		2E9F17BB1E5FD4AB0050C588 /* sketch3-exclusion.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch3-exclusion.frag"; sourceTree = "<group>"; };
+		2E9F17BC1E5FD4AB0050C588 /* sketch4-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch4-shaping.frag"; sourceTree = "<group>"; };
+		2E9F17BD1E5FD4AB0050C588 /* sketch5-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch5-color.frag"; sourceTree = "<group>"; };
+		2E9F17BE1E5FD4AB0050C588 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
+		2E9F17BF1E5FD4AB0050C588 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
+		2E9F17C01E5FD4AB0050C588 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
+		2E9F17C11E5FD4AB0050C588 /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
+		2E9F17C21E5FD4AB0050C588 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
+		2F7C679A2006D31840A70CED /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../openFrameworks/addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
 		38EA84449F01F08BFC105315 /* conf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = conf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/conf.h; sourceTree = SOURCE_ROOT; };
 		397E8A624D4AB2F53FB3B145 /* comp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = comp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/comp.h; sourceTree = SOURCE_ROOT; };
 		45714EFDE3523AD314A0CF02 /* dso.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dso.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dso.h; sourceTree = SOURCE_ROOT; };
@@ -95,8 +103,12 @@
 		47111EC88D3EBDD85008E424 /* opensslconf_osx.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = opensslconf_osx.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/opensslconf_osx.h; sourceTree = SOURCE_ROOT; };
 		473845264FD299BAA9E7B922 /* whrlpool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = whrlpool.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/whrlpool.h; sourceTree = SOURCE_ROOT; };
 		47F9EC847511CD0C79970AB7 /* engine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = engine.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/engine.h; sourceTree = SOURCE_ROOT; };
+		49524AA22E67F7EBB94B1959 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
 		4AE5C285698BA66A91C7A302 /* VideoGrabber.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VideoGrabber.cpp; path = src/VideoGrabber/VideoGrabber.cpp; sourceTree = SOURCE_ROOT; };
+		4B5D0296569B7706F256EAF3 /* ofxVideoRecorder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxVideoRecorder.h; path = src/VideoGrabber/ofxVideoRecorder/ofxVideoRecorder.h; sourceTree = SOURCE_ROOT; };
+		4B6F5818D0E2AFD2595B2872 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
 		4B9D2524319D9DA6B665DACE /* conf_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = conf_api.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/conf_api.h; sourceTree = SOURCE_ROOT; };
+		4BC9B5BBC24846E5549AC249 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../openFrameworks/addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		4D487981EEA6B957BF89A0FC /* sha.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sha.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/sha.h; sourceTree = SOURCE_ROOT; };
 		4E884FFC27621D7DDAF0D914 /* ssl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ssl.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ssl.h; sourceTree = SOURCE_ROOT; };
 		526D0C035C1251F5D295FD28 /* ofxXmlPoco.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxXmlPoco.h; path = ../../openFrameworks/addons/ofxPoco/src/ofxXmlPoco.h; sourceTree = SOURCE_ROOT; };
@@ -105,6 +117,7 @@
 		5A4FB65E50713F594A45CDAD /* opensslconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = opensslconf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/opensslconf.h; sourceTree = SOURCE_ROOT; };
 		60E8A28D0615CC20D4580023 /* modes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = modes.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/modes.h; sourceTree = SOURCE_ROOT; };
 		623B495C45AC90EA567C9CEF /* x509_vfy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = x509_vfy.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/x509_vfy.h; sourceTree = SOURCE_ROOT; };
+		69346381EA6161CDF45E8FF5 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../openFrameworks/addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
 		694FC34D727E15D65A603B09 /* cmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmac.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/cmac.h; sourceTree = SOURCE_ROOT; };
 		6A8940535E825101F9C4363B /* des.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des.h; sourceTree = SOURCE_ROOT; };
 		6A91E190855D6C1CCFAAA1E9 /* VideoGrabber.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoGrabber.h; path = src/VideoGrabber/VideoGrabber.h; sourceTree = SOURCE_ROOT; };
@@ -115,9 +128,14 @@
 		6E567C86D16AFF099894EA46 /* objects.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = objects.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/objects.h; sourceTree = SOURCE_ROOT; };
 		70F702A1A848DAECC7BD4CD9 /* rc2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rc2.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/rc2.h; sourceTree = SOURCE_ROOT; };
 		7734202A5E9448C9975C1A7F /* ts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ts.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ts.h; sourceTree = SOURCE_ROOT; };
+		78BBF4632DA521E4405A4573 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
+		78ED4DCB3CE71ADA635580CF /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../openFrameworks/addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		7A01D187E9BD4B66DAC74926 /* ssl2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ssl2.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ssl2.h; sourceTree = SOURCE_ROOT; };
 		7E42BFA769832F28499B78AB /* ui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ui.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ui.h; sourceTree = SOURCE_ROOT; };
+		80858D15F19AE61BA2F1276A /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
+		839D44350DD63C335DC5A865 /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSlider.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
 		8A43130910649B3FFA1FF867 /* ec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ec.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ec.h; sourceTree = SOURCE_ROOT; };
+		8A5F76FF5EC351A3A115DF8E /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		8ABCA26508D56EB071DABC2F /* blowfish.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = blowfish.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/blowfish.h; sourceTree = SOURCE_ROOT; };
 		8BFE38210BDFB815E5EBC876 /* lhash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = lhash.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/lhash.h; sourceTree = SOURCE_ROOT; };
 		8E1987FCBA7BB3BC917E3719 /* md4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = md4.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/md4.h; sourceTree = SOURCE_ROOT; };
@@ -125,6 +143,7 @@
 		909663480F16A330D4F050D1 /* aes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = aes.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/aes.h; sourceTree = SOURCE_ROOT; };
 		927047257499777643F9AAB0 /* opensslv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = opensslv.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/opensslv.h; sourceTree = SOURCE_ROOT; };
 		96DC65B11EB68C73047E8540 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asn1t.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
+		9837BACA0BBB23A6CB928BF1 /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPanel.h; path = ../../openFrameworks/addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
 		9B48A93A929E990711AFB6D9 /* hmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hmac.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/hmac.h; sourceTree = SOURCE_ROOT; };
 		9EB38DE8C0AEF9170C28E939 /* mdc2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mdc2.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/mdc2.h; sourceTree = SOURCE_ROOT; };
 		A0CF8ED26FE954859993CFD8 /* pkcs7.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pkcs7.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/pkcs7.h; sourceTree = SOURCE_ROOT; };
@@ -133,18 +152,24 @@
 		A3CF219BABB7DA73C7753016 /* buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffer.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/buffer.h; sourceTree = SOURCE_ROOT; };
 		A5F496A113E9DF5B0A5D613F /* symhacks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = symhacks.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/symhacks.h; sourceTree = SOURCE_ROOT; };
 		A6238D4CE0BFF3B2C5D4BA59 /* kssl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kssl.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/kssl.h; sourceTree = SOURCE_ROOT; };
+		A75C3DA7AE25FF90E851260C /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../openFrameworks/addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
 		A7BC09686B36957EF61A4959 /* evp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = evp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/evp.h; sourceTree = SOURCE_ROOT; };
 		AA71D2E778F75DF82F36872D /* ossl_typ.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ossl_typ.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ossl_typ.h; sourceTree = SOURCE_ROOT; };
+		B9273EEA1A9BE0C4BC578E54 /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxToggle.h; path = ../../openFrameworks/addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
 		B9B58A17DE34C2008E07E1B4 /* dh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dh.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dh.h; sourceTree = SOURCE_ROOT; };
 		C667569F5F119BF1B21E8F3D /* ebcdic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ebcdic.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ebcdic.h; sourceTree = SOURCE_ROOT; };
 		C8A578B8F84FCAA2C86E999F /* pkcs12.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pkcs12.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/pkcs12.h; sourceTree = SOURCE_ROOT; };
+		C9CB99A8F4FFD8917412B611 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
 		CC27D0F8A52814B3ED97D0A6 /* ocsp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ocsp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ocsp.h; sourceTree = SOURCE_ROOT; };
 		D0C5C87C9F4DF2599C1FEB8D /* asn1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asn1.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/asn1.h; sourceTree = SOURCE_ROOT; };
+		D68E6F17DC45C132ADB62305 /* ofxVideoRecorder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxVideoRecorder.cpp; path = src/VideoGrabber/ofxVideoRecorder/ofxVideoRecorder.cpp; sourceTree = SOURCE_ROOT; };
 		D6F801184047EFDC6C30930D /* crypto.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = crypto.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/crypto.h; sourceTree = SOURCE_ROOT; };
 		D724FD7F34959083B5106A62 /* ui_compat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ui_compat.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ui_compat.h; sourceTree = SOURCE_ROOT; };
 		DBD032B51C9FCBB7F0BE4187 /* obj_mac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = obj_mac.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/obj_mac.h; sourceTree = SOURCE_ROOT; };
 		E059ECC7350B9C6A91A754F3 /* rsa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rsa.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/rsa.h; sourceTree = SOURCE_ROOT; };
+		E1EDD9A54004EE2EDBFE6BA2 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../openFrameworks/addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4708EACD79C84447A798098 /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../openFrameworks/addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* bookofshadersDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bookofshadersDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
@@ -198,45 +223,43 @@
 			name = include;
 			sourceTree = "<group>";
 		};
-		2E77B1431E306519005D81A1 /* ofxVideoRecorder */ = {
+		2E9F17AB1E5FD4AB0050C588 /* shaders */ = {
 			isa = PBXGroup;
 			children = (
-				2E77B1441E306519005D81A1 /* ofxVideoRecorder.cpp */,
-				2E77B1451E306519005D81A1 /* ofxVideoRecorder.h */,
-			);
-			name = ofxVideoRecorder;
-			path = VideoGrabber/ofxVideoRecorder;
-			sourceTree = "<group>";
-		};
-		2E77B1591E306AC3005D81A1 /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-				2E77B15A1E306AC3005D81A1 /* sketch1.frag */,
-				2E77B15B1E306AC3005D81A1 /* sketch1.vert */,
-				2E77B15C1E306AC3005D81A1 /* sketch2.frag */,
-				2E77B15D1E306AC3005D81A1 /* sketch3-exclusion.frag */,
-				2E77B15E1E306AC3005D81A1 /* sketch4-shaping.frag */,
-				2E77B15F1E306AC3005D81A1 /* sketch5-color.frag */,
-				2E77B1601E36ED16005D81A1 /* sketch6-functionplotting.frag */,
-				2E77B1621E36F5D0005D81A1 /* sketch6a-shaping.frag */,
-				2E77B1611E36F303005D81A1 /* sketch7-sunset.frag */,
-				2ECC4F8D1E3C10B9003BAA8C /* sketch8-color.frag */,
-				2EA370A11E43D4B500A0E811 /* sketch9-color.frag */,
-				2EA370A21E44F32A00A0E811 /* sketch10-shapes.frag */,
-				2EA370A31E44F86A00A0E811 /* sketch11-shapes.frag */,
-				2EA370A41E44FBE800A0E811 /* sketch12-rect.frag */,
-				2E1025621E4C11AA0056305B /* sketch12a-lines.frag */,
-				2EA370A51E45104B00A0E811 /* sketch13-circles.frag */,
-				2EC5656F1E4D6D3000AD8A62 /* sketch13a-heart.frag */,
-				2EC565701E4D702600AD8A62 /* sketch13b-additionspatterns.frag */,
-				2E8A4F9F1E5BDD2C00855A66 /* sketch13c-multiplications.frag */,
-				2E8A4FA01E5BE1B500855A66 /* sketch13d-wtf.frag */,
-				2E8A4FA11E5BE56700855A66 /* sketch13e-wtf.frag */,
-				2E671C921E5E7E4A008701B2 /* sketch14-distancefields.frag */,
-				2E8A4F9E1E5BDA8A00855A66 /* newsketch.frag */,
+				2E9F17AD1E5FD4AB0050C588 /* sketch1.frag */,
+				2E9F17AE1E5FD4AB0050C588 /* sketch1.vert */,
+				2E9F17AF1E5FD4AB0050C588 /* sketch10-shapes.frag */,
+				2E9F17B01E5FD4AB0050C588 /* sketch11-shapes.frag */,
+				2E9F17B11E5FD4AB0050C588 /* sketch12-rect.frag */,
+				2E9F17B21E5FD4AB0050C588 /* sketch12a-lines.frag */,
+				2E9F17B31E5FD4AB0050C588 /* sketch13-circles.frag */,
+				2E9F17B41E5FD4AB0050C588 /* sketch13a-heart.frag */,
+				2E9F17B51E5FD4AB0050C588 /* sketch13b-additionspatterns.frag */,
+				2E9F17B61E5FD4AB0050C588 /* sketch13c-multiplications.frag */,
+				2E9F17B71E5FD4AB0050C588 /* sketch13d-wtf.frag */,
+				2E9F17B81E5FD4AB0050C588 /* sketch13e-wtf.frag */,
+				2E9F17B91E5FD4AB0050C588 /* sketch14-distancefields.frag */,
+				2E9F17BA1E5FD4AB0050C588 /* sketch2.frag */,
+				2E9F17BB1E5FD4AB0050C588 /* sketch3-exclusion.frag */,
+				2E9F17BC1E5FD4AB0050C588 /* sketch4-shaping.frag */,
+				2E9F17BD1E5FD4AB0050C588 /* sketch5-color.frag */,
+				2E9F17BE1E5FD4AB0050C588 /* sketch6-functionplotting.frag */,
+				2E9F17BF1E5FD4AB0050C588 /* sketch6a-shaping.frag */,
+				2E9F17C01E5FD4AB0050C588 /* sketch7-sunset.frag */,
+				2E9F17C11E5FD4AB0050C588 /* sketch8-color.frag */,
+				2E9F17C21E5FD4AB0050C588 /* sketch9-color.frag */,
+				2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */,
 			);
 			name = shaders;
 			path = bin/data/shaders;
+			sourceTree = "<group>";
+		};
+		480A780D8D0308AE4A368801 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				A763ED608B35AE3310251DEE /* src */,
+			);
+			name = ofxGui;
 			sourceTree = "<group>";
 		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
@@ -337,6 +360,30 @@
 			name = libs;
 			sourceTree = "<group>";
 		};
+		A763ED608B35AE3310251DEE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8A5F76FF5EC351A3A115DF8E /* ofxBaseGui.cpp */,
+				A75C3DA7AE25FF90E851260C /* ofxBaseGui.h */,
+				C9CB99A8F4FFD8917412B611 /* ofxButton.cpp */,
+				E1EDD9A54004EE2EDBFE6BA2 /* ofxButton.h */,
+				E4708EACD79C84447A798098 /* ofxGui.h */,
+				78BBF4632DA521E4405A4573 /* ofxGuiGroup.cpp */,
+				2F7C679A2006D31840A70CED /* ofxGuiGroup.h */,
+				4B6F5818D0E2AFD2595B2872 /* ofxLabel.cpp */,
+				4BC9B5BBC24846E5549AC249 /* ofxLabel.h */,
+				1383DE3833FF682FF67B5A69 /* ofxPanel.cpp */,
+				9837BACA0BBB23A6CB928BF1 /* ofxPanel.h */,
+				839D44350DD63C335DC5A865 /* ofxSlider.cpp */,
+				69346381EA6161CDF45E8FF5 /* ofxSlider.h */,
+				49524AA22E67F7EBB94B1959 /* ofxSliderGroup.cpp */,
+				78ED4DCB3CE71ADA635580CF /* ofxSliderGroup.h */,
+				80858D15F19AE61BA2F1276A /* ofxToggle.cpp */,
+				B9273EEA1A9BE0C4BC578E54 /* ofxToggle.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		B2C98B62869583DB9FE30DA7 /* openssl */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,9 +395,19 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				480A780D8D0308AE4A368801 /* ofxGui */,
 				0117D94CE0C695E5E5482BEC /* ofxPoco */,
 			);
 			name = addons;
+			sourceTree = "<group>";
+		};
+		DF3E87ECDF34EE03A2364CFD /* ofxVideoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				D68E6F17DC45C132ADB62305 /* ofxVideoRecorder.cpp */,
+				4B5D0296569B7706F256EAF3 /* ofxVideoRecorder.h */,
+			);
+			name = ofxVideoRecorder;
 			sourceTree = "<group>";
 		};
 		E4328144138ABC890047C5CB /* Products */ = {
@@ -364,7 +421,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				2E77B1591E306AC3005D81A1 /* shaders */,
+				2E9F17AB1E5FD4AB0050C588 /* shaders */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -398,9 +455,9 @@
 		FDA0770E6370F372DB80313D /* VideoGrabber */ = {
 			isa = PBXGroup;
 			children = (
-				2E77B1431E306519005D81A1 /* ofxVideoRecorder */,
-				6A91E190855D6C1CCFAAA1E9 /* VideoGrabber.h */,
+				DF3E87ECDF34EE03A2364CFD /* ofxVideoRecorder */,
 				4AE5C285698BA66A91C7A302 /* VideoGrabber.cpp */,
+				6A91E190855D6C1CCFAAA1E9 /* VideoGrabber.h */,
 			);
 			name = VideoGrabber;
 			sourceTree = "<group>";
@@ -508,8 +565,16 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				96A16EECA3D979DC858C14E2 /* ofxVideoRecorder.cpp in Sources */,
 				113DD1078FBD17F5761A9855 /* VideoGrabber.cpp in Sources */,
-				2E77B1461E306519005D81A1 /* ofxVideoRecorder.cpp in Sources */,
+				1D54A3D1C2CCEACF3844B3EC /* ofxBaseGui.cpp in Sources */,
+				D14112331A0BCEF6A1B28D26 /* ofxButton.cpp in Sources */,
+				78DCCE01CA1ECC0F810A1857 /* ofxGuiGroup.cpp in Sources */,
+				B6BF15D1BE7D008A045F1C22 /* ofxLabel.cpp in Sources */,
+				56E0EC06162476CFD4D889EF /* ofxPanel.cpp in Sources */,
+				DA517FABDA67F42EBD35AA8D /* ofxSlider.cpp in Sources */,
+				59091B69D0C22F1C78C7FBD7 /* ofxSliderGroup.cpp in Sources */,
+				6EB34FC42E763C8515577046 /* ofxToggle.cpp in Sources */,
 				A2879E6F7C6EF163C3201D6E /* ofxXmlPoco.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,7 +615,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
@@ -591,7 +657,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
@@ -643,7 +710,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
@@ -695,7 +763,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
@@ -736,7 +805,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
@@ -777,7 +847,8 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src/VideoGrabber,
-					src/src,
+					src/VideoGrabber/ofxVideoRecorder,
+					../../openFrameworks/addons/ofxGui/src,
 					../../openFrameworks/addons/ofxPoco/libs/poco/include,
 					../../openFrameworks/addons/ofxPoco/src,
 					../../openFrameworks/addons/ofxPoco/libs/openssl/include,
