@@ -63,6 +63,7 @@
 		2DFC55AEAA9C19747932384B /* md5.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = md5.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/md5.h; sourceTree = SOURCE_ROOT; };
 		2E01431449ED632CC88103F8 /* des_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des_old.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
 		2E1025621E4C11AA0056305B /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
+		2E671C921E5E7E4A008701B2 /* sketch14-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14-distancefields.frag"; sourceTree = "<group>"; };
 		2E77B1441E306519005D81A1 /* ofxVideoRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxVideoRecorder.cpp; sourceTree = "<group>"; };
 		2E77B1451E306519005D81A1 /* ofxVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVideoRecorder.h; sourceTree = "<group>"; };
 		2E77B15A1E306AC3005D81A1 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 				2E8A4F9F1E5BDD2C00855A66 /* sketch13c-multiplications.frag */,
 				2E8A4FA01E5BE1B500855A66 /* sketch13d-wtf.frag */,
 				2E8A4FA11E5BE56700855A66 /* sketch13e-wtf.frag */,
+				2E671C921E5E7E4A008701B2 /* sketch14-distancefields.frag */,
 				2E8A4F9E1E5BDA8A00855A66 /* newsketch.frag */,
 			);
 			name = shaders;

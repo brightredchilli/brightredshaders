@@ -22,6 +22,7 @@ void ofApp::draw(){
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     shader.end();
 
+
     if (needsCapture) {
         needsCapture = false;
         ofImage img = ofImage();

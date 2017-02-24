@@ -24,7 +24,7 @@ void main() {
     float d = 0.0;
 
     // Remap the space to -1. to 1.
-//    st = st *2.-1.;
+    //    st = st *2.-1.;
 
     // Make the distance field
 
@@ -44,7 +44,7 @@ void main() {
     color = vec3( step(.01, d) );
 
     // Variation from above, use two steps to create a stroke
-//    color = vec3( step(.3,d) * step(d,.4));
+    //    color = vec3( step(.3,d) * step(d,.4));
 
     // Variation from above, use two smooth steps to create a blurred stroke
     //color = vec3( smoothstep(.3,.4,d)* smoothstep(.6,.5,d));
