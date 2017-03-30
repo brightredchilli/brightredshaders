@@ -16,13 +16,6 @@ out vec4 outputColor;
 
 vec2 st = gl_FragCoord.xy/u_bounds.xy;
 
-float box(in vec2 _st, in vec2 _size){
-    _size = vec2(0.5) - _size * 0.5;
-    vec2 uv = smoothstep(_size, _size + vec2(0.001), _st);
-    uv *= smoothstep(_size, _size + vec2(0.001), vec2(1.0) - _st);
-    return uv.x * uv.y;
-}
-
 void main() {
 
     // remap space from -1 to 1
@@ -33,7 +26,16 @@ void main() {
 
     vec3 color = vec3(0.0);
 
-    color = box(st, vec2(0.5,0.5));
+    // Number of sides of your shape
+    float N = (sin(u_time / 1.) + 1.5) * 10.;
+
+    float r = TWO_PI/float(N);
+    float a = atan(st.y,st.x);
+
+    // Shaping function that modulate the distance
+    float d = cos(floor(.5 + a/r) * r - a) * length(st);
+
+    color = vec3(1.0-smoothstep(.4,.41,d));
 
     outputColor = vec4(color, 1.0);
 }

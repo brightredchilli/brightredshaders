@@ -5,7 +5,7 @@ void ofApp::setup(){
     shader.load("shaders/sketch1.vert", "shaders/newsketch.frag");
 
     gui.setup();
-    gui.add(uniformA.setup("uniformA", 0, 0, 10.0));
+    gui.add(uniformA.setup("uniformA", 0, .5, 3.));
 
 }
 
