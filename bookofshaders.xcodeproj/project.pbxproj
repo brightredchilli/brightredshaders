@@ -73,6 +73,8 @@
 		2E01431449ED632CC88103F8 /* des_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des_old.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
 		2E1B540B1E6912E600229F48 /* sketch14a-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14a-distancefields.frag"; sourceTree = "<group>"; };
 		2E2FF3AA1E75B059001638CD /* sketch14b-recedingwavelets.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14b-recedingwavelets.frag"; sourceTree = "<group>"; };
+		2E4D2D751E9C76ED000566EC /* sketch16-crosspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch16-crosspatterns.frag"; sourceTree = "<group>"; };
+		2E5E37261E8DEE7B00066C1E /* sketch15a-multiple-translate.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch15a-multiple-translate.frag"; sourceTree = "<group>"; };
 		2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
 		2E9F17AD1E5FD4AB0050C588 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
 		2E9F17AE1E5FD4AB0050C588 /* sketch1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.vert; sourceTree = "<group>"; };
@@ -254,7 +256,9 @@
 				2E1B540B1E6912E600229F48 /* sketch14a-distancefields.frag */,
 				2E2FF3AA1E75B059001638CD /* sketch14b-recedingwavelets.frag */,
 				2EEA15401E8C9EE8003A25BD /* sketch14c-polygons.frag */,
+				2E5E37261E8DEE7B00066C1E /* sketch15a-multiple-translate.frag */,
 				2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */,
+				2E4D2D751E9C76ED000566EC /* sketch16-crosspatterns.frag */,
 			);
 			name = shaders;
 			path = bin/data/shaders;
