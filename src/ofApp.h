@@ -25,6 +25,7 @@ class ofApp : public ofBaseApp{
     ofShader shader;
     bool needsCapture;
     ofxFloatSlider uniformA;
+    ofxFloatSlider uniformB;
     ofxPanel gui;
 		
 };

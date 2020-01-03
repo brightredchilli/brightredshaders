@@ -39,7 +39,7 @@ void main() {
 
     // ... if you scale r by f, then you're saying, warp the uniform distance according to f.
     // mult simply makes it larger, this makes it pass through 'fract' more times
-    int mult = 80;
+    int mult = 10;
     color = vec3(step(fract(f * r * mult - u_time), 0.92));
 
 

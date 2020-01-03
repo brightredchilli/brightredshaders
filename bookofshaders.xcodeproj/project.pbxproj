@@ -11,12 +11,14 @@
 		1D54A3D1C2CCEACF3844B3EC /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F76FF5EC351A3A115DF8E /* ofxBaseGui.cpp */; };
 		56E0EC06162476CFD4D889EF /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE3833FF682FF67B5A69 /* ofxPanel.cpp */; };
 		59091B69D0C22F1C78C7FBD7 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49524AA22E67F7EBB94B1959 /* ofxSliderGroup.cpp */; };
+		6A8C8D915D3428323A27A1C6 /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4A5CF0F2CB2351896E35436 /* ofxInputField.cpp */; };
 		6EB34FC42E763C8515577046 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80858D15F19AE61BA2F1276A /* ofxToggle.cpp */; };
 		78DCCE01CA1ECC0F810A1857 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78BBF4632DA521E4405A4573 /* ofxGuiGroup.cpp */; };
 		96A16EECA3D979DC858C14E2 /* ofxVideoRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D68E6F17DC45C132ADB62305 /* ofxVideoRecorder.cpp */; };
 		A2879E6F7C6EF163C3201D6E /* ofxXmlPoco.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58F91E300DCF0D2266BC29E5 /* ofxXmlPoco.cpp */; };
 		B6BF15D1BE7D008A045F1C22 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F5818D0E2AFD2595B2872 /* ofxLabel.cpp */; };
 		D14112331A0BCEF6A1B28D26 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9CB99A8F4FFD8917412B611 /* ofxButton.cpp */; };
+		D83D086D5EF3F1F85C107A72 /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 369A644EE87E8862BA7AB7E9 /* ofxColorPicker.cpp */; };
 		DA517FABDA67F42EBD35AA8D /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 839D44350DD63C335DC5A865 /* ofxSlider.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -71,35 +73,38 @@
 		2C13ACCE6D5DFB1F9F03B697 /* idea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = idea.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/idea.h; sourceTree = SOURCE_ROOT; };
 		2DFC55AEAA9C19747932384B /* md5.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = md5.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/md5.h; sourceTree = SOURCE_ROOT; };
 		2E01431449ED632CC88103F8 /* des_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des_old.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des_old.h; sourceTree = SOURCE_ROOT; };
-		2E1B540B1E6912E600229F48 /* sketch14a-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14a-distancefields.frag"; sourceTree = "<group>"; };
-		2E2FF3AA1E75B059001638CD /* sketch14b-recedingwavelets.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14b-recedingwavelets.frag"; sourceTree = "<group>"; };
-		2E4D2D751E9C76ED000566EC /* sketch16-crosspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch16-crosspatterns.frag"; sourceTree = "<group>"; };
-		2E5E37261E8DEE7B00066C1E /* sketch15a-multiple-translate.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch15a-multiple-translate.frag"; sourceTree = "<group>"; };
-		2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
-		2E9F17AD1E5FD4AB0050C588 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
-		2E9F17AE1E5FD4AB0050C588 /* sketch1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.vert; sourceTree = "<group>"; };
-		2E9F17AF1E5FD4AB0050C588 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
-		2E9F17B01E5FD4AB0050C588 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
-		2E9F17B11E5FD4AB0050C588 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
-		2E9F17B21E5FD4AB0050C588 /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
-		2E9F17B31E5FD4AB0050C588 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
-		2E9F17B41E5FD4AB0050C588 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
-		2E9F17B51E5FD4AB0050C588 /* sketch13b-additionspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-additionspatterns.frag"; sourceTree = "<group>"; };
-		2E9F17B61E5FD4AB0050C588 /* sketch13c-multiplications.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13c-multiplications.frag"; sourceTree = "<group>"; };
-		2E9F17B71E5FD4AB0050C588 /* sketch13d-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13d-wtf.frag"; sourceTree = "<group>"; };
-		2E9F17B81E5FD4AB0050C588 /* sketch13e-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13e-wtf.frag"; sourceTree = "<group>"; };
-		2E9F17B91E5FD4AB0050C588 /* sketch14-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14-distancefields.frag"; sourceTree = "<group>"; };
-		2E9F17BA1E5FD4AB0050C588 /* sketch2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch2.frag; sourceTree = "<group>"; };
-		2E9F17BB1E5FD4AB0050C588 /* sketch3-exclusion.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch3-exclusion.frag"; sourceTree = "<group>"; };
-		2E9F17BC1E5FD4AB0050C588 /* sketch4-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch4-shaping.frag"; sourceTree = "<group>"; };
-		2E9F17BD1E5FD4AB0050C588 /* sketch5-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch5-color.frag"; sourceTree = "<group>"; };
-		2E9F17BE1E5FD4AB0050C588 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
-		2E9F17BF1E5FD4AB0050C588 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
-		2E9F17C01E5FD4AB0050C588 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
-		2E9F17C11E5FD4AB0050C588 /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
-		2E9F17C21E5FD4AB0050C588 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
-		2EEA15401E8C9EE8003A25BD /* sketch14c-polygons.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14c-polygons.frag"; sourceTree = "<group>"; };
+		2EBD1C131F86EB1300E913C5 /* newsketch.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = newsketch.frag; sourceTree = "<group>"; };
+		2EBD1C141F86EB1300E913C5 /* sketch1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.frag; sourceTree = "<group>"; };
+		2EBD1C151F86EB1300E913C5 /* sketch1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch1.vert; sourceTree = "<group>"; };
+		2EBD1C161F86EB1300E913C5 /* sketch10-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch10-shapes.frag"; sourceTree = "<group>"; };
+		2EBD1C171F86EB1300E913C5 /* sketch11-shapes.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch11-shapes.frag"; sourceTree = "<group>"; };
+		2EBD1C181F86EB1300E913C5 /* sketch12-rect.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12-rect.frag"; sourceTree = "<group>"; };
+		2EBD1C191F86EB1300E913C5 /* sketch12a-lines.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch12a-lines.frag"; sourceTree = "<group>"; };
+		2EBD1C1A1F86EB1300E913C5 /* sketch13-circles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13-circles.frag"; sourceTree = "<group>"; };
+		2EBD1C1B1F86EB1300E913C5 /* sketch13a-heart.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13a-heart.frag"; sourceTree = "<group>"; };
+		2EBD1C1C1F86EB1300E913C5 /* sketch13b-additionspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13b-additionspatterns.frag"; sourceTree = "<group>"; };
+		2EBD1C1D1F86EB1300E913C5 /* sketch13c-multiplications.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13c-multiplications.frag"; sourceTree = "<group>"; };
+		2EBD1C1E1F86EB1300E913C5 /* sketch13d-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13d-wtf.frag"; sourceTree = "<group>"; };
+		2EBD1C1F1F86EB1300E913C5 /* sketch13e-wtf.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch13e-wtf.frag"; sourceTree = "<group>"; };
+		2EBD1C201F86EB1300E913C5 /* sketch14-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14-distancefields.frag"; sourceTree = "<group>"; };
+		2EBD1C211F86EB1300E913C5 /* sketch14a-distancefields.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14a-distancefields.frag"; sourceTree = "<group>"; };
+		2EBD1C221F86EB1300E913C5 /* sketch14b-recedingwavelets.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14b-recedingwavelets.frag"; sourceTree = "<group>"; };
+		2EBD1C231F86EB1300E913C5 /* sketch14c-polygons.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch14c-polygons.frag"; sourceTree = "<group>"; };
+		2EBD1C241F86EB1300E913C5 /* sketch15a-multiple-translate.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch15a-multiple-translate.frag"; sourceTree = "<group>"; };
+		2EBD1C251F86EB1300E913C5 /* sketch16-crosspatterns.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch16-crosspatterns.frag"; sourceTree = "<group>"; };
+		2EBD1C261F86EB1300E913C5 /* sketch16a-kaleidoscope.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch16a-kaleidoscope.frag"; sourceTree = "<group>"; };
+		2EBD1C271F86EB1300E913C5 /* sketch16b-infinite-cross.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch16b-infinite-cross.frag"; sourceTree = "<group>"; };
+		2EBD1C281F86EB1300E913C5 /* sketch2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sketch2.frag; sourceTree = "<group>"; };
+		2EBD1C291F86EB1300E913C5 /* sketch3-exclusion.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch3-exclusion.frag"; sourceTree = "<group>"; };
+		2EBD1C2A1F86EB1300E913C5 /* sketch4-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch4-shaping.frag"; sourceTree = "<group>"; };
+		2EBD1C2B1F86EB1300E913C5 /* sketch5-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch5-color.frag"; sourceTree = "<group>"; };
+		2EBD1C2C1F86EB1300E913C5 /* sketch6-functionplotting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6-functionplotting.frag"; sourceTree = "<group>"; };
+		2EBD1C2D1F86EB1300E913C5 /* sketch6a-shaping.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch6a-shaping.frag"; sourceTree = "<group>"; };
+		2EBD1C2E1F86EB1300E913C5 /* sketch7-sunset.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch7-sunset.frag"; sourceTree = "<group>"; };
+		2EBD1C2F1F86EB1300E913C5 /* sketch8-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch8-color.frag"; sourceTree = "<group>"; };
+		2EBD1C301F86EB1300E913C5 /* sketch9-color.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "sketch9-color.frag"; sourceTree = "<group>"; };
 		2F7C679A2006D31840A70CED /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../openFrameworks/addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		369A644EE87E8862BA7AB7E9 /* ofxColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxColorPicker.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxColorPicker.cpp; sourceTree = SOURCE_ROOT; };
 		38EA84449F01F08BFC105315 /* conf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = conf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/conf.h; sourceTree = SOURCE_ROOT; };
 		397E8A624D4AB2F53FB3B145 /* comp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = comp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/comp.h; sourceTree = SOURCE_ROOT; };
 		45714EFDE3523AD314A0CF02 /* dso.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dso.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dso.h; sourceTree = SOURCE_ROOT; };
@@ -122,6 +127,7 @@
 		5A4FB65E50713F594A45CDAD /* opensslconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = opensslconf.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/opensslconf.h; sourceTree = SOURCE_ROOT; };
 		60E8A28D0615CC20D4580023 /* modes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = modes.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/modes.h; sourceTree = SOURCE_ROOT; };
 		623B495C45AC90EA567C9CEF /* x509_vfy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = x509_vfy.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/x509_vfy.h; sourceTree = SOURCE_ROOT; };
+		64CA989F3973A4A39B77BEB4 /* ofxInputField.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxInputField.h; path = ../../openFrameworks/addons/ofxGui/src/ofxInputField.h; sourceTree = SOURCE_ROOT; };
 		69346381EA6161CDF45E8FF5 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../openFrameworks/addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
 		694FC34D727E15D65A603B09 /* cmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmac.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/cmac.h; sourceTree = SOURCE_ROOT; };
 		6A8940535E825101F9C4363B /* des.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = des.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/des.h; sourceTree = SOURCE_ROOT; };
@@ -160,6 +166,7 @@
 		A75C3DA7AE25FF90E851260C /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../openFrameworks/addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
 		A7BC09686B36957EF61A4959 /* evp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = evp.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/evp.h; sourceTree = SOURCE_ROOT; };
 		AA71D2E778F75DF82F36872D /* ossl_typ.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ossl_typ.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ossl_typ.h; sourceTree = SOURCE_ROOT; };
+		B4A5CF0F2CB2351896E35436 /* ofxInputField.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxInputField.cpp; path = ../../openFrameworks/addons/ofxGui/src/ofxInputField.cpp; sourceTree = SOURCE_ROOT; };
 		B9273EEA1A9BE0C4BC578E54 /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxToggle.h; path = ../../openFrameworks/addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
 		B9B58A17DE34C2008E07E1B4 /* dh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dh.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dh.h; sourceTree = SOURCE_ROOT; };
 		C667569F5F119BF1B21E8F3D /* ebcdic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ebcdic.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ebcdic.h; sourceTree = SOURCE_ROOT; };
@@ -171,15 +178,16 @@
 		D6F801184047EFDC6C30930D /* crypto.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = crypto.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/crypto.h; sourceTree = SOURCE_ROOT; };
 		D724FD7F34959083B5106A62 /* ui_compat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ui_compat.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/ui_compat.h; sourceTree = SOURCE_ROOT; };
 		DBD032B51C9FCBB7F0BE4187 /* obj_mac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = obj_mac.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/obj_mac.h; sourceTree = SOURCE_ROOT; };
+		DCE427728A0504072DC45142 /* ofxColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxColorPicker.h; path = ../../openFrameworks/addons/ofxGui/src/ofxColorPicker.h; sourceTree = SOURCE_ROOT; };
 		E059ECC7350B9C6A91A754F3 /* rsa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rsa.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/rsa.h; sourceTree = SOURCE_ROOT; };
 		E1EDD9A54004EE2EDBFE6BA2 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../openFrameworks/addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4708EACD79C84447A798098 /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../openFrameworks/addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* bookofshadersDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bookofshadersDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
-		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../openFrameworks/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E60ECC490451874DD3987F72 /* dtls1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dtls1.h; path = ../../openFrameworks/addons/ofxPoco/libs/openssl/include/openssl/dtls1.h; sourceTree = SOURCE_ROOT; };
@@ -228,41 +236,43 @@
 			name = include;
 			sourceTree = "<group>";
 		};
-		2E9F17AB1E5FD4AB0050C588 /* shaders */ = {
+		2EBD1C121F86EB1300E913C5 /* shaders */ = {
 			isa = PBXGroup;
 			children = (
-				2E9F17AD1E5FD4AB0050C588 /* sketch1.frag */,
-				2E9F17AE1E5FD4AB0050C588 /* sketch1.vert */,
-				2E9F17AF1E5FD4AB0050C588 /* sketch10-shapes.frag */,
-				2E9F17B01E5FD4AB0050C588 /* sketch11-shapes.frag */,
-				2E9F17B11E5FD4AB0050C588 /* sketch12-rect.frag */,
-				2E9F17B21E5FD4AB0050C588 /* sketch12a-lines.frag */,
-				2E9F17B31E5FD4AB0050C588 /* sketch13-circles.frag */,
-				2E9F17B41E5FD4AB0050C588 /* sketch13a-heart.frag */,
-				2E9F17B51E5FD4AB0050C588 /* sketch13b-additionspatterns.frag */,
-				2E9F17B61E5FD4AB0050C588 /* sketch13c-multiplications.frag */,
-				2E9F17B71E5FD4AB0050C588 /* sketch13d-wtf.frag */,
-				2E9F17B81E5FD4AB0050C588 /* sketch13e-wtf.frag */,
-				2E9F17B91E5FD4AB0050C588 /* sketch14-distancefields.frag */,
-				2E9F17BA1E5FD4AB0050C588 /* sketch2.frag */,
-				2E9F17BB1E5FD4AB0050C588 /* sketch3-exclusion.frag */,
-				2E9F17BC1E5FD4AB0050C588 /* sketch4-shaping.frag */,
-				2E9F17BD1E5FD4AB0050C588 /* sketch5-color.frag */,
-				2E9F17BE1E5FD4AB0050C588 /* sketch6-functionplotting.frag */,
-				2E9F17BF1E5FD4AB0050C588 /* sketch6a-shaping.frag */,
-				2E9F17C01E5FD4AB0050C588 /* sketch7-sunset.frag */,
-				2E9F17C11E5FD4AB0050C588 /* sketch8-color.frag */,
-				2E9F17C21E5FD4AB0050C588 /* sketch9-color.frag */,
-				2E1B540B1E6912E600229F48 /* sketch14a-distancefields.frag */,
-				2E2FF3AA1E75B059001638CD /* sketch14b-recedingwavelets.frag */,
-				2EEA15401E8C9EE8003A25BD /* sketch14c-polygons.frag */,
-				2E5E37261E8DEE7B00066C1E /* sketch15a-multiple-translate.frag */,
-				2E9F17AC1E5FD4AB0050C588 /* newsketch.frag */,
-				2E4D2D751E9C76ED000566EC /* sketch16-crosspatterns.frag */,
+				2EBD1C131F86EB1300E913C5 /* newsketch.frag */,
+				2EBD1C141F86EB1300E913C5 /* sketch1.frag */,
+				2EBD1C151F86EB1300E913C5 /* sketch1.vert */,
+				2EBD1C161F86EB1300E913C5 /* sketch10-shapes.frag */,
+				2EBD1C171F86EB1300E913C5 /* sketch11-shapes.frag */,
+				2EBD1C181F86EB1300E913C5 /* sketch12-rect.frag */,
+				2EBD1C191F86EB1300E913C5 /* sketch12a-lines.frag */,
+				2EBD1C1A1F86EB1300E913C5 /* sketch13-circles.frag */,
+				2EBD1C1B1F86EB1300E913C5 /* sketch13a-heart.frag */,
+				2EBD1C1C1F86EB1300E913C5 /* sketch13b-additionspatterns.frag */,
+				2EBD1C1D1F86EB1300E913C5 /* sketch13c-multiplications.frag */,
+				2EBD1C1E1F86EB1300E913C5 /* sketch13d-wtf.frag */,
+				2EBD1C1F1F86EB1300E913C5 /* sketch13e-wtf.frag */,
+				2EBD1C201F86EB1300E913C5 /* sketch14-distancefields.frag */,
+				2EBD1C211F86EB1300E913C5 /* sketch14a-distancefields.frag */,
+				2EBD1C221F86EB1300E913C5 /* sketch14b-recedingwavelets.frag */,
+				2EBD1C231F86EB1300E913C5 /* sketch14c-polygons.frag */,
+				2EBD1C241F86EB1300E913C5 /* sketch15a-multiple-translate.frag */,
+				2EBD1C251F86EB1300E913C5 /* sketch16-crosspatterns.frag */,
+				2EBD1C261F86EB1300E913C5 /* sketch16a-kaleidoscope.frag */,
+				2EBD1C271F86EB1300E913C5 /* sketch16b-infinite-cross.frag */,
+				2EBD1C281F86EB1300E913C5 /* sketch2.frag */,
+				2EBD1C291F86EB1300E913C5 /* sketch3-exclusion.frag */,
+				2EBD1C2A1F86EB1300E913C5 /* sketch4-shaping.frag */,
+				2EBD1C2B1F86EB1300E913C5 /* sketch5-color.frag */,
+				2EBD1C2C1F86EB1300E913C5 /* sketch6-functionplotting.frag */,
+				2EBD1C2D1F86EB1300E913C5 /* sketch6a-shaping.frag */,
+				2EBD1C2E1F86EB1300E913C5 /* sketch7-sunset.frag */,
+				2EBD1C2F1F86EB1300E913C5 /* sketch8-color.frag */,
+				2EBD1C301F86EB1300E913C5 /* sketch9-color.frag */,
 			);
 			name = shaders;
 			path = bin/data/shaders;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		480A780D8D0308AE4A368801 /* ofxGui */ = {
 			isa = PBXGroup;
@@ -377,9 +387,13 @@
 				A75C3DA7AE25FF90E851260C /* ofxBaseGui.h */,
 				C9CB99A8F4FFD8917412B611 /* ofxButton.cpp */,
 				E1EDD9A54004EE2EDBFE6BA2 /* ofxButton.h */,
+				369A644EE87E8862BA7AB7E9 /* ofxColorPicker.cpp */,
+				DCE427728A0504072DC45142 /* ofxColorPicker.h */,
 				E4708EACD79C84447A798098 /* ofxGui.h */,
 				78BBF4632DA521E4405A4573 /* ofxGuiGroup.cpp */,
 				2F7C679A2006D31840A70CED /* ofxGuiGroup.h */,
+				B4A5CF0F2CB2351896E35436 /* ofxInputField.cpp */,
+				64CA989F3973A4A39B77BEB4 /* ofxInputField.h */,
 				4B6F5818D0E2AFD2595B2872 /* ofxLabel.cpp */,
 				4BC9B5BBC24846E5549AC249 /* ofxLabel.h */,
 				1383DE3833FF682FF67B5A69 /* ofxPanel.cpp */,
@@ -431,7 +445,6 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				2E9F17AB1E5FD4AB0050C588 /* shaders */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -445,6 +458,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2EBD1C121F86EB1300E913C5 /* shaders */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
@@ -564,7 +578,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../openFrameworks/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\necho \"$GCC_PREPROCESSOR_DEFINITIONS\";\n";
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved \"$OF_PATH/libs/fmodex/lib/osx/libfmodex.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\necho \"$GCC_PREPROCESSOR_DEFINITIONS\";\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -579,7 +593,9 @@
 				113DD1078FBD17F5761A9855 /* VideoGrabber.cpp in Sources */,
 				1D54A3D1C2CCEACF3844B3EC /* ofxBaseGui.cpp in Sources */,
 				D14112331A0BCEF6A1B28D26 /* ofxButton.cpp in Sources */,
+				D83D086D5EF3F1F85C107A72 /* ofxColorPicker.cpp in Sources */,
 				78DCCE01CA1ECC0F810A1857 /* ofxGuiGroup.cpp in Sources */,
+				6A8C8D915D3428323A27A1C6 /* ofxInputField.cpp in Sources */,
 				B6BF15D1BE7D008A045F1C22 /* ofxLabel.cpp in Sources */,
 				56E0EC06162476CFD4D889EF /* ofxPanel.cpp in Sources */,
 				DA517FABDA67F42EBD35AA8D /* ofxSlider.cpp in Sources */,

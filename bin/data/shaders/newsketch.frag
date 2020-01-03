@@ -8,6 +8,7 @@ uniform vec2 u_bounds;
 uniform vec2 u_mouse;
 uniform float u_time;
 uniform float u_variableA;
+uniform float u_variableB;
 
 out vec4 outputColor;
 
@@ -17,14 +18,20 @@ out vec4 outputColor;
 vec2 st = gl_FragCoord.xy/u_bounds.xy;
 float normalizer = u_bounds.x/u_bounds.y;
 
+float random (vec2 st) {
+    return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
+}
 
-// origin is from bottom left
-float rect(in vec2 st, in vec2 origin, in vec2 size) {
-    float left = step(origin.x, st.x);
-    float bottom = step(origin.y, st.y);
-    float right = step(origin.x + size.x, st.x) * -1. + 1.;
-    float top = step(origin.y + size.y, st.y) * -1. + 1.;
-    return left * bottom * right * top;
+vec2 truchetPattern(in vec2 _st, in float _index){
+    _index = fract(((_index-0.5)*2.0));
+    if (_index > 0.75) {
+        _st = vec2(1.0) - _st;
+    } else if (_index > 0.5) {
+        _st = vec2(1.0-_st.x,_st.y);
+    } else if (_index > 0.25) {
+        _st = 1.0-vec2(1.0-_st.x,_st.y);
+    }
+    return _st;
 }
 
 mat2 rotate2d(float angle) {
@@ -35,27 +42,22 @@ void main() {
 
     // this line normalizes the x, if it is larger than y.
     st.x *= normalizer;
-    vec3 color = vec3(0.0);
 
-    st *= vec2(3.,3.);
+    st *= 10.0; // Scale the coordinate system by 10
+    
+    vec2 ipos = floor(st);  // get the integer coords
+    vec2 fpos = fract(st);  // get the fractional coords
 
-    vec2 original_st = st;
+    vec2 tile = truchetPattern(fpos, random( ipos ));
 
-    st = fract(st); // Wrap arround 1.0
+    // Assign a random value based on the integer coord
+    vec3 color = vec3(random(ipos));
 
-    st -= 0.5;
+    // this is a trick to drawing diagonal lines. y position goes from 0 to 1.
+    float width = .1;
+    color = vec3(smoothstep(tile.x - width,tile.x,tile.y) - smoothstep(tile.x, tile.x + width, tile.y));
 
-    vec2 uv = step(vec2(1., 1.), original_st) * (1 - step(vec2(3., 2.), original_st));
-    float mult = uv.x * uv.y;
-
-    st = mix(rotate2d(sin(u_time) * PI * 0.5) * st, rotate2d(sin(u_time + PI) * PI * 0.5) * st, mult);
-
-    color = vec3(st.x + 0.5,st.y + 0.5,0.0);
-
-    vec2 origin = vec2(-.05,-.2);
-    vec2 size = vec2(.1, .4);
-    color = mix(color, vec3(1.), rect(st, origin, size));
-    color = mix(color, vec3(1.), rect(st, origin.yx, size.yx));
-
+    // uncomment to see the coordinate space
+//    color = vec3(fpos,0.0);
     outputColor = vec4(color, 1.0);
 }
